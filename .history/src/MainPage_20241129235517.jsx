@@ -22,6 +22,7 @@ const MainPage = ({ ivfDetail }) => {
     calculateIVFSuccessRate(ivfDetail.age, ivfDetail.ivfCycle);
   }, [ivfDetail]);
 
+  // Calculate the circle's properties
   const radius = 90;
   const circumference = 2 * Math.PI * radius;
   const dashOffset = circumference - (circumference * ivfSuccessRate) / 100;

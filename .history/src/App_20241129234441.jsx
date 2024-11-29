@@ -22,6 +22,13 @@ function App() {
   return (
     <div>
       <Navbar />
+      {/* <IVFCalculator
+        selectedAge={selectedAge}
+        setSelectedAge={setSelectedAge}
+        value={value}
+        setValue={setValue}
+      /> */}
+
       <Router>
         <Routes>
           <Route
@@ -41,7 +48,7 @@ function App() {
         </Routes>
       </Router>
 
-     
+      {/* <HomePage selectedAge={selectedAge} value={value}/> */}
     </div>
   );
 }

@@ -41,7 +41,7 @@ function App() {
         </Routes>
       </Router>
 
-     
+      {/* <HomePage selectedAge={selectedAge} value={value}/> */}
     </div>
   );
 }

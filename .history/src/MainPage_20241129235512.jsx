@@ -15,13 +15,16 @@ const MainPage = ({ ivfDetail }) => {
       else if (age <= 40) baselineRate = 0.25; 
       else baselineRate = 0.15; 
 
+      // Calculate cumulative success rate after given number of cycles
       const cumulativeRate = 1 - Math.pow(1 - baselineRate, cycles);
 
+      // Return the success rate as a percentage
       setIvfSuccessRate((cumulativeRate * 100).toFixed(2));
     };
     calculateIVFSuccessRate(ivfDetail.age, ivfDetail.ivfCycle);
   }, [ivfDetail]);
 
+  // Calculate the circle's properties
   const radius = 90;
   const circumference = 2 * Math.PI * radius;
   const dashOffset = circumference - (circumference * ivfSuccessRate) / 100;

@@ -22,6 +22,13 @@ function App() {
   return (
     <div>
       <Navbar />
+      {/* <IVFCalculator
+        selectedAge={selectedAge}
+        setSelectedAge={setSelectedAge}
+        value={value}
+        setValue={setValue}
+      /> */}
+
       <Router>
         <Routes>
           <Route
@@ -30,10 +37,10 @@ function App() {
               <IVFCalculator
               ivfDetails={ivfDetails}
               setIvfDetails={setIvfDetails}
-                selectedAge={selectedAge}
-                setSelectedAge={setSelectedAge}
-                value={value}
-                setValue={setValue}
+                // selectedAge={selectedAge}
+                // setSelectedAge={setSelectedAge}
+                // value={value}
+                // setValue={setValue}
               />
             }
           />
@@ -41,7 +48,7 @@ function App() {
         </Routes>
       </Router>
 
-     
+      {/* <HomePage selectedAge={selectedAge} value={value}/> */}
     </div>
   );
 }

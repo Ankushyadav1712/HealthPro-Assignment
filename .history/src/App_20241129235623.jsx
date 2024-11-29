@@ -21,7 +21,8 @@ function App() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar /
+
       <Router>
         <Routes>
           <Route
@@ -41,7 +42,7 @@ function App() {
         </Routes>
       </Router>
 
-     
+      {/* <HomePage selectedAge={selectedAge} value={value}/> */}
     </div>
   );
 }
