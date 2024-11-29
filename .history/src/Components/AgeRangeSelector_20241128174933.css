@@ -1,0 +1,25 @@
+/* Base styling for the radio button */
+.radio-input {
+    appearance: none; 
+    border: 2px solid #e07a5f; 
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    border-radius: 50%; /* Make it circular */
+    position: relative; /* Allows for positioning of the pseudo-element */
+    cursor: pointer;
+    outline: none; /* Optional */
+}
+
+/* Styling for the dot when the radio button is checked */
+.radio-input:checked::after {
+    content: '';
+    display: block;
+    width: 10px; /* Adjust size of the dot */
+    height: 10px; /* Adjust size of the dot */
+    background-color: orange; /* Dot color */
+    border-radius: 50%; /* Makes it circular */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

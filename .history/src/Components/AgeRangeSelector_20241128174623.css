@@ -1,0 +1,14 @@
+
+.radio-dot:checked::after {
+    content: '';
+    display: block;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background-color: white; /* Color of the dot */
+    border-radius: 50%; /* Makes it circular */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

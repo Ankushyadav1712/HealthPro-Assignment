@@ -1,0 +1,39 @@
+
+.radio-input {
+    appearance: none; 
+    border: 2px solid #e07a5f; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    position: relative;
+    cursor: pointer;
+    outline: none; 
+}
+
+
+.radio-input:checked::after {
+    content: '';
+    display: block;
+    width: 10px; 
+    height: 10px; 
+    background-color: orange; 
+    border-radius: 50%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gradient-background {
+    position: relative;
+    height: 100vh;
+    background: radial-gradient(20% 20% at 50% 30%, #41b541 0%, #303030 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .gradient-background img {
+    border-radius: 4px;
+  }
+  
