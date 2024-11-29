@@ -42,10 +42,10 @@ const Checklist = ({ setIvfDetails }) => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      <h1 className=" sm:text-2xl leading-42 mb-6 text-black  mt-[20px] leading-42 text-xl ml-[12px]">
+      <h1 className=" sm:text-3xl leading-42 mb-6 text-black  mt-[20px] leading-42 text-xl ml-[12px]">
         Do you have any of these medical conditions?
       </h1>
-      <div className="flex sm:flex-wrap items-start flex-col gap-6 mb-6 ml-[-150px]">
+      <div className="flex sm:flex-wrap items-start flex-col gap-6 mb-6 ml-[]">
         {Object.keys(conditions).map((condition) => (
           <label
             key={condition}

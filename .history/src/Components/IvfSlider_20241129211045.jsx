@@ -10,24 +10,22 @@ const IVFSlider = ({ setIvfDetails, ivfDetails }) => {
 
   return (
     <div className="slider-div text-center font-poppins p-5 mt-5">
-      <h3 className="text-[#1E231E] sm:text-2xl mb-5 text-xl ml-[-120px] font-medium mt-[-30px] sm:ml-[-20px]">
-        Number of IVF Cycles?
-      </h3>
-      <div className="relative w-[300px] mx-auto ">
+      <h3 className="text-[#1E231E] sm:text-2xl mb-5 text-xl ml-[-120px] font-medium mt-[-30px]">Number of IVF Cycles?</h3>
+      <div className="relative w-[300px] mx-auto">
         <input
           type="range"
           min="1"
           max="4"
           value={ivfDetails.ivfCycle}
           onChange={handleChange}
-          className="w-full h-[6px] appearance-none bg-transparent cursor-pointer"
+          className="w-full h-[6px] appearance-none bg-transparent cursor-pointer mt-[12]"
           style={{
             outline: "none",
           }}
         />
 
         {/* Custom slider track */}
-        <div className="absolute w-full h-[6px] bg-[#e5e7eb] rounded-full top-1/2 transform -translate-y-1/2 mt-[12]"></div>
+        <div className="absolute w-full h-[6px] bg-[#e5e7eb] rounded-full top-1/2 transform -translate-y-1/2"></div>
 
         {/* Active track */}
         <div

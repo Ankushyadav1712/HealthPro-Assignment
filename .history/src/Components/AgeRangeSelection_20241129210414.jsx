@@ -34,10 +34,10 @@ const AgeRangeSelection = ({
 
   return (
     <div className="flex flex-col items-center bg-[#eeeaea] mt-[150px] p-4">
-      <h1 className="sm:text-2xl leading-42 mb-6 text-black text-xl font-medium ml-[-60px] sm:ml-[-20px]">
+      <h1 className="sm:text-3xl leading-42 mb-6 text-black text-xl font-medium ml-1">
         Which age range applies to you?
       </h1>
-      <div className="sm:grid grid-cols-3 gap-4 flex flex-col ml-[-180px] sm:ml-[-20px]">
+      <div className="grid grid-cols-3 gap-4 ">
         {ageData.map((age) => (
           <label key={age.id} className="flex items-center space-x-3">
             <input

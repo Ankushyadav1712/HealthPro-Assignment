@@ -10,9 +10,7 @@ const IVFSlider = ({ setIvfDetails, ivfDetails }) => {
 
   return (
     <div className="slider-div text-center font-poppins p-5 mt-5">
-      <h3 className="text-[#1E231E] sm:text-2xl mb-5 text-xl ml-[-120px] font-medium mt-[-30px] sm:ml-[-20px]">
-        Number of IVF Cycles?
-      </h3>
+      <h3 className="text-[#1E231E] sm:text-2xl mb-5 text-xl ml-[-120px] font-medium mt-[-30px]">Number of IVF Cycles?</h3>
       <div className="relative w-[300px] mx-auto ">
         <input
           type="range"
@@ -27,11 +25,11 @@ const IVFSlider = ({ setIvfDetails, ivfDetails }) => {
         />
 
         {/* Custom slider track */}
-        <div className="absolute w-full h-[6px] bg-[#e5e7eb] rounded-full top-1/2 transform -translate-y-1/2 mt-[12]"></div>
+        <div className="absolute w-full h-[6px] bg-[#e5e7eb] rounded-full top-1/2 transform -translate-y-1/2"></div>
 
         {/* Active track */}
         <div
-          className="absolute h-[6px] bg-[#f38175] rounded-full top-1/2 transform -translate-y-1/2"
+          className="absolute h-[6px] bg-[#f38175] rounded-full top-1/2 transform -translate-y-1/2 mt-[12]"
           style={{
             width: `${((ivfDetails.ivfCycle - 1) / 3) * 100}%`,
             transition: "width 0.3s ease-in-out",

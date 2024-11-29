@@ -45,7 +45,7 @@ const Radiolist = ({ setIvfDetails }) => {
 
           {/* PGT Testing */}
           <div className="flex flex-col items-center ">
-            <div className="flex  ml-[-90px] mt-[-60px] sm:mt-[1px] sm:gap-4 sm:ml-[40px] ">
+            <div className="flex  ml-[-90px] mt-[-60px] sm:mt-[1px] sm:gap-4 sm:ml-[40px]">
               <label className="flex items-center gap-4 text-black">
                 PGT Testing:
                 <input

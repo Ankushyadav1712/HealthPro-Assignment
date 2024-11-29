@@ -16,9 +16,9 @@ const Radiolist = ({ setIvfDetails }) => {
         <h1 className="sm:text-2xl leading-42 text-xl ml-[25px] mb-6 text-black">
           Have you undergone these procedures before?
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-18 mt-[20px]">
-          <div className="flex flex-col items-center ">
-            <div className="flex gap-4 ml-[-60px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="flex flex-col items-center">
+            <div className="flex gap-4 ml-[-58px]">
               <label className="flex items-center gap-4 text-black">
                 ICSI Procedure:
                 <input
@@ -45,7 +45,7 @@ const Radiolist = ({ setIvfDetails }) => {
 
           {/* PGT Testing */}
           <div className="flex flex-col items-center ">
-            <div className="flex  ml-[-90px] mt-[-60px] sm:mt-[1px] sm:gap-4 sm:ml-[40px] ">
+            <div className="flex  ml-[-90px] mt-[-50px] sm:mt-[1px] sm:gap-4 sm:ml-[10px]">
               <label className="flex items-center gap-4 text-black">
                 PGT Testing:
                 <input

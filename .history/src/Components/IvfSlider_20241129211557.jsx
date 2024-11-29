@@ -9,8 +9,8 @@ const IVFSlider = ({ setIvfDetails, ivfDetails }) => {
   };
 
   return (
-    <div className="slider-div text-center font-poppins p-5 mt-5">
-      <h3 className="text-[#1E231E] sm:text-2xl mb-5 text-xl ml-[-120px] font-medium mt-[-30px] sm:ml-[-20px]">
+    <div className="slider-div text-center font-poppins p-5 mt-5 gap-">
+      <h3 className="text-[#1E231E] sm:text-2xl mb-5 text-xl ml-[-120px] font-medium mt-[-30px]">
         Number of IVF Cycles?
       </h3>
       <div className="relative w-[300px] mx-auto ">
