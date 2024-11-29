@@ -84,7 +84,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
           <nav className="text-gray-700 text-sm mb-[-70px]">
             <ul className="flex items-center space-x-2 ">
               <li className="mb-[100px]">
-                <a href="/">
+                <a href="/" className="hover:underline">
                   Home
                 </a>
               </li>

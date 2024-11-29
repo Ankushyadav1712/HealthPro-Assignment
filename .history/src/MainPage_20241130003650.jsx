@@ -34,7 +34,7 @@ const MainPage = ({ ivfDetail }) => {
           <nav className="text-white text-sm mb-[-70px]">
             <ul className="flex items-center space-x-2 ">
               <li className="sm:mb-[-250px]">
-                <a href="/" className="hover:underline">
+                <a href="" className="hover:underline">
                   Home
                 </a>
               </li>

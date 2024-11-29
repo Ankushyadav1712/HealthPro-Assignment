@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import HomeImage from "./assets/HomeImage.png";
-import { Link } from "react-router-dom";
 
 const MainPage = ({ ivfDetail }) => {
   const [ivfSuccessRate, setIvfSuccessRate] = useState(0);

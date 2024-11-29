@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import HomeImage from "./assets/HomeImage.png";
-import { Link } from "react-router-dom";
 
 const MainPage = ({ ivfDetail }) => {
   const [ivfSuccessRate, setIvfSuccessRate] = useState(0);
@@ -33,13 +32,13 @@ const MainPage = ({ ivfDetail }) => {
         <div className=" ml-[200px]">
           <nav className="text-white text-sm mb-[-70px]">
             <ul className="flex items-center space-x-2 ">
-              <li className="sm:mb-[-250px]">
+              <li className="sm:mb-[-200px]">
                 <a href="/" className="hover:underline">
                   Home
                 </a>
               </li>
-              <span className="text-gray-500 sm:mb-[-250px]">/</span>
-              <li className="font-bold text-white sm:mb-[-250px]">
+              <span className="text-gray-500 sm:mb-[-200px]">/</span>
+              <li className="font-bold text-white sm:mb-[-200px]">
                 IVF Success Rate Calculator
               </li>
               <span className="text-gray-500 mb-[-250px]">/</span>

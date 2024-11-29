@@ -84,7 +84,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
           <nav className="text-gray-700 text-sm mb-[-70px]">
             <ul className="flex items-center space-x-2 ">
               <li className="mb-[100px]">
-                <a href="/">
+                <a href="/" className="hover:underline">
                   Home
                 </a>
               </li>
@@ -274,7 +274,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
         <button
           onClick={handleCalculate}
-          className="bg-[#D75555] text-white px-6 py-2 text-sm md:text-base rounded-lg shadow-md hover:bg-[#d05d55] transition-colors"
+          className="bg-[#e3776f] text-white px-6 py-2 text-sm md:text-base rounded-lg shadow-md hover:bg-[#d05d55] transition-colors"
         >
           Calculate
         </button>

@@ -34,9 +34,9 @@ const MainPage = ({ ivfDetail }) => {
           <nav className="text-white text-sm mb-[-70px]">
             <ul className="flex items-center space-x-2 ">
               <li className="sm:mb-[-250px]">
-                <a href="/" className="hover:underline">
+                <Link href="/" className="hover:underline">
                   Home
-                </a>
+                </Linnk>
               </li>
               <span className="text-gray-500 sm:mb-[-250px]">/</span>
               <li className="font-bold text-white sm:mb-[-250px]">
