@@ -45,7 +45,7 @@ const Checklist = ({ setIvfDetails }) => {
       <h1 className=" sm:text-2xl leading-42 mb-6 text-black  mt-[20px] leading-42 text-xl ml-[12px]">
         Do you have any of these medical conditions?
       </h1>
-      <div className="flex sm:flex-wrap items-start flex-col sm:flex-row gap-6 mb-6 ml-[-150px] sm:ml-[30px]">
+      <div className="flex sm:flex-wrap items-start flex-col gap-6 mb-6 ml-[-150px]">
         {Object.keys(conditions).map((condition) => (
           <label
             key={condition}
