@@ -11,7 +11,7 @@ const Checklist = ({ setIvfDetails }) => {
   });
 
   const [error, setError] = useState("");
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleCheckboxChange = (e) => {
     const { name, checked } = e.target;
@@ -22,7 +22,9 @@ const Checklist = ({ setIvfDetails }) => {
         setError("");
       }
 
-      setIvfDetails(prev => {return { ...prev, medicalCondition :conditions};})
+      setIvfDetails((prev) => {
+        return { ...prev, medicalCondition: conditions };
+      });
       return updatedConditions;
     });
   };
