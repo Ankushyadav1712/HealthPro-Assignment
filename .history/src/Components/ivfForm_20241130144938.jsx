@@ -61,7 +61,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
       ) {
         setError("");
       }
-      return {...prev,medicalCondition:updatedConditions};
+      return {updatedConditions;
     });
   };
 

@@ -46,22 +46,17 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
     }
   };
 
-  const handleConditionChange = (e) => {
+    const handleConditionChange = (e) => {
     const { name, checked } = e.target;
-    setIvfDetails((prev) => {
-      const updatedConditions = {
-        ...prev,
-        medicalCondition: {
-          ...prev.medicalCondition,
-          [name]: checked,
-        },
-      };
-      if (
-        Object.values(updatedConditions.medicalCondition).some((value) => value)
-      ) {
+   setConditions((prev) => {
+      const updatedConditions = { ...prev, [name]: checked };
+
+      if (Object.values(updatedConditions).some((value) => value)) {
         setError("");
       }
-      return {...prev,medicalCondition:updatedConditions};
+
+      setIvfDetails(prev => {return { ...prev, medicalCondition :conditions};})
+      return updatedConditions;
     });
   };
 

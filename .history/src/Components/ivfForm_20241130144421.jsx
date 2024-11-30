@@ -48,7 +48,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
 
   const handleConditionChange = (e) => {
     const { name, checked } = e.target;
-    setIvfDetails((prev) => {
+    set((prev) => {
       const updatedConditions = {
         ...prev,
         medicalCondition: {
@@ -61,7 +61,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
       ) {
         setError("");
       }
-      return {...prev,medicalCondition:updatedConditions};
+      return updatedConditions;
     });
   };
 
