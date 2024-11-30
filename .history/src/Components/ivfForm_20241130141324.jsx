@@ -79,12 +79,27 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
 
   return (
     <>
-      <div className="flex flex-col items-center bg-[#eeeaea] mt-[150px]  p-4">
-        <div className="flex  space-x-2 p-4 text-black sm:hidden ">
-          <i className="fas fa-arrow-left fa-lg mt-[-35px] ml-[-50px]"></i>
-          <h1 className="text-2xl font-medium mt-[-50px]">IVF Success Rate Calculator</h1>
+      <div className="flex flex-col items-center bg-[#eeeaea] mt-[150px] p-4">
+        <div className="flex items-center space-x-2 p-4 text-black sm:hidden ">
+          {/* Back Arrow Icon */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          {/* Header Title */}
+          <h1 className="text-lg font-medium ">IVF Success Rate Calculator</h1>
         </div>
-        <div className="mt-[-50px] ml-[-900px] ">
+        <div className="mt-1 ml-[-900px] ">
           <nav className="text-gray-700 text-sm mb-[-70px]">
             <ul className="flex items-center space-x-2 ">
               <li className="mb-[100px]">
@@ -97,6 +112,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
             </ul>
           </nav>
         </div>
+        {/* Age Range Selection */}
         <h1 className="sm:text-2xl leading-42 mb-6 text-black text-xl font-medium ml-[-60px] sm:ml-[-20px]">
           Which age range applies to you?
         </h1>

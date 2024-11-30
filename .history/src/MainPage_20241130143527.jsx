@@ -108,6 +108,7 @@ const MainPage = ({ ivfDetail }) => {
           />
         </div>
 
+        {/* Button Section */}
         <div className="flex justify-center mt-10 px-4 md:hidden">
           <button className="bg-orange-500 text-white py-3 px-6 rounded-full text-lg shadow-md hover:bg-orange-600 transition">
             Start private consultation →

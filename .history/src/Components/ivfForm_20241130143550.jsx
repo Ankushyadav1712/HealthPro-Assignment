@@ -97,6 +97,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
             </ul>
           </nav>
         </div>
+        {/* Age Range Selection */}
         <h1 className="sm:text-2xl leading-42 mb-6 text-black text-xl font-medium ml-[-60px] sm:ml-[-20px]">
           Which age range applies to you?
         </h1>

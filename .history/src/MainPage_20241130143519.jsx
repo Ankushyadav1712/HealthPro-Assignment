@@ -77,6 +77,7 @@ const MainPage = ({ ivfDetail }) => {
                 fill="none"
                 className="transition-all duration-300"
               />
+              {/* Progress circle */}
               <circle
                 cx="50%"
                 cy="50%"
@@ -98,8 +99,10 @@ const MainPage = ({ ivfDetail }) => {
           </div>
         </div>
 
+        {/* Gradient Background */}
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-radial from-green-800 via-gray-700 to-gray-900 rounded-lg -z-10"></div>
 
+        {/* Image Section */}
         <div className="mt-8 flex justify-center gradient-background md:mt-[-500px] md:ml-[500px]">
           <img
             src={HomeImage}
@@ -108,6 +111,7 @@ const MainPage = ({ ivfDetail }) => {
           />
         </div>
 
+        {/* Button Section */}
         <div className="flex justify-center mt-10 px-4 md:hidden">
           <button className="bg-orange-500 text-white py-3 px-6 rounded-full text-lg shadow-md hover:bg-orange-600 transition">
             Start private consultation →
