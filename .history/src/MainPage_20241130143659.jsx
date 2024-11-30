@@ -55,7 +55,7 @@ const MainPage = ({ ivfDetail }) => {
           </h1>
         </div>
 
-        <div className="relative grid w-64 h-60 mt-[-200px] sm:mt-[0px]">
+        <div className="relative grid w-64 h-60 sm:mt-[-200px]">
           <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-1/2 h-0.5 bg-orange-500 mt-[150px]"></div>
           <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-orange-500 rounded-full mt-[150px] mr-[100px]"></div>
         </div>
