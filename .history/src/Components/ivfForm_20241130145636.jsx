@@ -285,7 +285,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
               ? "bg-[#D75555] hover:bg-[#d05d55]"
               : "bg-gray-300 cursor-not-allowed"
           } text-white px-6 py-2 text-sm md:text-base rounded-lg shadow-md transition-colors`}
-          disabled={!isAgeSelected} 
+          disabled={!isAgeSelected} // Disable button if no age is selected
         >
           Calculate
         </button>

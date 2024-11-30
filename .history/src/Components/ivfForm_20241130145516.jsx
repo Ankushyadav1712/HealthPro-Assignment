@@ -36,7 +36,6 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
       const { first, last } = selectedAgeData;
       const randomAge = Math.floor(Math.random() * (last - first + 1)) + first;
       setIvfDetails((prev) => ({ ...prev, age: randomAge }));
-      setIsAgeSelected(true);
     }
   };
 
@@ -84,9 +83,7 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
       <div className="flex flex-col items-center bg-[#eeeaea] mt-[150px]  p-4">
         <div className="flex  space-x-2 p-4 text-black sm:hidden ">
           <i className="fas fa-arrow-left fa-lg mt-[-35px] ml-[-50px]"></i>
-          <h1 className="text-2xl font-medium mt-[-50px]">
-            IVF Success Rate Calculator
-          </h1>
+          <h1 className="text-2xl font-medium mt-[-50px]">IVF Success Rate Calculator</h1>
         </div>
         <div className="mt-[-50px] ml-[-900px] ">
           <nav className="text-gray-700 text-sm mb-[-70px]">
@@ -277,15 +274,9 @@ const IVFForm = ({ ivfDetails, setIvfDetails }) => {
           ))}
         </div>
         {error && <p className="text-red-500 text-sm mb-4">{error}</p>}
-
         <button
           onClick={handleCalculate}
-          className={`${
-            isAgeSelected
-              ? "bg-[#D75555] hover:bg-[#d05d55]"
-              : "bg-gray-300 cursor-not-allowed"
-          } text-white px-6 py-2 text-sm md:text-base rounded-lg shadow-md transition-colors`}
-          disabled={!isAgeSelected} 
+          className="bg-[#D75555] text-white px-6 py-2 text-sm md:text-base rounded-lg shadow-md hover:bg-[#d05d55] transition-colors"
         >
           Calculate
         </button>
